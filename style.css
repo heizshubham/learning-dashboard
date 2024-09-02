@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Flexbox Container */
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #1e40af, #1f2937);
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+
+
+.cta-button {
+    padding: 8px 16px;
+    /* Smaller button size */
+    background-color: #ffffff;
+    color: #1e40af;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #dbeafe;
+}
+
+
+
+/* Cards Section */
+.cards-section {
+    padding: 50px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #e2e8f0;
+    transform: translateY(-10px);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #1e40af;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    color: #1e40af;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card-link:hover {
+    color: #1e3a8a;
+}
+
+/* Icon Styles (Simple SVG placeholders) */
+.code-icon::before {
+    content: "<>";
+}
+
+.server-icon::before {
+    content: "B";
+}
+
+.brush-icon::before {
+    content: "D";
+}
+
+.database-icon::before {
+    content: "J";
+}
+
+.cloud-icon::before {
+    content: "C";
+}
+
+.puzzle-icon::before {
+    content: "A";
+}
